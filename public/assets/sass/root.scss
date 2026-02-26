@@ -393,6 +393,10 @@
   <---     Mobile Navigation      -->
   <--- -------------------------- -*/
   /* Mobile - 1023px */
+
+  .desktop-hide-link {
+    display: none;
+  }
   @media only screen and (max-width: 63.9375rem) {
     body.cs-open {
       overflow: hidden;
@@ -434,14 +438,16 @@
       opacity: 1;
       transform: translateY(0);
     }
+
     #cs-navigation .cs-container {
       width: 100%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
+
     #cs-navigation .cs-logo {
-      width: 180px;
+      width: 140px;
       max-width: inherit;
       height: auto;
       margin: 0 auto;
@@ -453,6 +459,11 @@
       align-items: center;
       z-index: 10;
     }
+
+    .desktop-hide-link {
+      display: block;
+    }
+
     #cs-navigation .cs-logo img {
       width: 100%;
       height: 100%;
@@ -470,6 +481,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: absolute;
+      right: 2.5%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
     }
     #cs-navigation .cs-active .cs-line1 {
       top: 50%;
