@@ -1,158 +1,337 @@
 ---
-title: 'Boiler Servicing in Esher, Claygate & Thames Ditton'
-description: 'GB Boilers'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'boiler-servicing/'
+title: "Boiler Servicing in Esher | GB Boilers | Annual Boiler Service"
+description: "Professional boiler servicing in Esher, Claygate and Thames Ditton. Gas Safe registered engineer with nearly 20 years experience. Book your boiler service today."
+preloadImg: "/assets/images/image-06.webp"
+permalink: "boiler-servicing/"
 eleventyNavigation:
-    key: Boiler Servicing
-    order: 3100
-    <!-- parent: Projects -->
+  key: Boiler Servicing
+  order: 3100
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/about.css" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.gbboilers.co.uk/boiler-servicing/#service",
+        "name": "Boiler Servicing",
+        "url": "https://www.gbboilers.co.uk/boiler-servicing/",
+        "serviceType": "Boiler Servicing",
+        "description": "Professional boiler servicing in Esher, Claygate and Thames Ditton by GB Boilers. Gas Safe registered engineer with nearly 20 years of experience.",
+        "provider": {
+          "@type": "Plumber",
+          "@id": "https://www.gbboilers.co.uk/#business",
+          "name": "GB Boilers",
+          "url": "https://www.gbboilers.co.uk/",
+          "image": "https://www.gbboilers.co.uk/assets/images/image-06.webp",
+          "logo": "https://www.gbboilers.co.uk/assets/images/logo/image.svg",
+          "telephone": "+448001937033",
+          "email": "info@gbboilers.co.uk",
+          "priceRange": "££",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7 Stevens Lane",
+            "addressLocality": "Claygate",
+            "addressRegion": "Surrey",
+            "postalCode": "KT10 0TD",
+            "addressCountry": "GB"
+          }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Esher" },
+          { "@type": "City", "name": "Claygate" },
+          { "@type": "City", "name": "Thames Ditton" }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GBP",
+          "url": "https://www.gbboilers.co.uk/boiler-servicing/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.gbboilers.co.uk/boiler-servicing/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.gbboilers.co.uk/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Boiler Servicing",
+            "item": "https://www.gbboilers.co.uk/boiler-servicing/"
+          }
+        ]
+      }
+    ]
+  }
+</script>
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--   LANDING                   -->
+<!-- ============================================ -->
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
-{% endblock %}
+<section id="int-hero">
+  <h1 id="home-h">Boiler Servicing in Esher, Claygate & Thames Ditton</h1>
+  <picture>
+    <source media="(max-width: 600px)" srcset="/assets/images/image-06.webp" />
+    <source media="(min-width: 601px)" srcset="/assets/images/image-06.webp" />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/image-06.webp"
+      alt="GB Boilers - Van"
+      loading="eager"
+      width="2500"
+      height="1667"
+    />
+  </picture>
+</section>
 
-{% block body %}
-    <!-- ============================================ -->
-    <!--   LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--   Side By Side                 -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Boiler Servicing</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/image-06.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/image-06.webp">
-            <img aria-hidden="true" decoding="async" src="/assets/images/image-06.webp" alt="commercial painting" loading="eager" width="2500" height="1667">
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/image-04.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/image-04.webp"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/image-04.webp"
+          alt="GB Boilers - Boiler installation"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/image-05.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/image-05.webp"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/image-05.webp"
+          alt="GB Boilers - Engineer working on a boiler"
+          loading="lazy"
+          width="400"
+          height="563"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">Our Services</span>
+      <h2 class="cs-title">Professional Boiler Servicing</h2>
+      <p class="cs-text">
+        Regular boiler servicing is essential for keeping your heating system
+        running safely and efficiently. At GB Boilers, we provide thorough
+        annual boiler services for homeowners across Esher, Claygate, Thames
+        Ditton and the surrounding Surrey areas.
+      </p>
+      <p class="cs-text">
+        An annual boiler service helps identify potential problems before they
+        become expensive repairs, extends the lifespan of your boiler, and
+        ensures your system is operating at peak efficiency. For landlords,
+        regular servicing is a legal requirement to maintain a valid Gas Safety
+        Certificate.
+      </p>
+      <p class="cs-text">
+        As a Gas Safe registered engineer with nearly 20 years of experience,
+        Greg Bradley provides professional servicing for all major boiler brands
+        including Worcester Bosch, Vaillant, Baxi, Ideal and more.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="why-choose-1730">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h2 class="cs-title">What's Included in a Boiler Service</h2>
+      <p>
+        During a comprehensive boiler service, we carry out a series of checks
+        and tests to ensure your heating system is safe and working correctly.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
         </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--   Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/image-04.webp">
-                    <source media="(min-width: 601px)" srcset="/assets/images/image-04.webp">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/image-04.webp" alt="commercial painting" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/image-05.webp">
-                    <source media="(min-width: 601px)" srcset="/assets/images/image-05.webp">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/image-05.webp" alt="commercial painting" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">Our Services</span>
-                <h2 class="cs-title">Professional Boiler Servicing</h2>
-                <p class="cs-text">
-                    Regular boiler servicing is essential for keeping your heating system running safely and efficiently. At GB Boilers, we provide thorough annual boiler services for homeowners across Esher, Claygate, Thames Ditton and the surrounding Surrey areas.
-                </p>
-                <p class="cs-text">
-                    An annual boiler service helps identify potential problems before they become expensive repairs, extends the lifespan of your boiler, and ensures your system is operating at peak efficiency. For landlords, regular servicing is a legal requirement to maintain a valid Gas Safety Certificate.
-                </p>
-                <p class="cs-text">
-                    As a Gas Safe registered engineer with nearly 20 years of experience, Greg Bradley provides professional servicing for all major boiler brands including Worcester Bosch, Vaillant, Baxi, Ideal and more.
-                </p>
-            </div>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Visual Inspection</h3>
+          <p class="cs-item-text">
+            We check the boiler casing, pipework, flue and ventilation for any
+            signs of damage, corrosion or deterioration.
+          </p>
         </div>
-    </section>
-
-    <section id="why-choose-1730">
-        <div class="cs-container">
-            <div class="cs-content">
-                <h2 class="cs-title">What's Included in a Boiler Service</h2>
-                <p>During a comprehensive boiler service, we carry out a series of checks and tests to ensure your heating system is safe and working correctly.</p>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
-                    </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Visual Inspection</h3>
-                        <p class="cs-item-text">
-                            We check the boiler casing, pipework, flue and ventilation for any signs of damage, corrosion or deterioration.
-                        </p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
-                    </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Internal Components</h3>
-                        <p class="cs-item-text">
-                            We inspect and clean key internal components including the burner, heat exchanger and main injector.
-                        </p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
-                    </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Gas Pressure & Flow</h3>
-                        <p class="cs-item-text">
-                            We test gas pressure and flow rates to ensure the boiler is receiving the correct amount of gas for safe operation.
-                        </p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
-                    </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Flue Analysis</h3>
-                        <p class="cs-item-text">
-                           We perform a flue gas analysis to check combustion efficiency and ensure emissions are within safe limits.
-                        </p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
-                    </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Safety Controls</h3>
-                        <p class="cs-item-text">
-                          We test all safety devices and controls to ensure they are functioning correctly and will shut down the boiler if needed.
-                        </p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="72" height="72">
-                    </picture>
-                    <div class="cs-flex">
-                        <h3 class="cs-h3">Service Report</h3>
-                        <p class="cs-item-text">
-                          You receive a detailed service report and any recommendations for repairs or improvements to your system.
-                        </p>
-                    </div>
-                </li>
-            </ul>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Internal Components</h3>
+          <p class="cs-item-text">
+            We inspect and clean key internal components including the burner,
+            heat exchanger and main injector.
+          </p>
         </div>
-    </section>
-
-    <section id="sbs-r" style="padding: 100px 15px; background-color: #c42636;">
-        <div class="cs-container" style="max-width:1280px;margin:0 auto">
-            <div class="cs-content mx-600">
-                <span class="cs-topper" style="color: #D4AF37;">Why It Matters</span>
-                <h2 class="cs-title">Benefits of Regular Boiler Servicing</h2>
-                <p class="cs-text" style="margin-bottom: 10px;"><strong>Safety First:</strong> A boiler service checks for gas leaks, carbon monoxide risks and other potential hazards. Your family's safety is the most important reason to service your boiler annually.</p>
-                <p class="cs-text" style="margin-bottom: 10px;"><strong>Lower Energy Bills:</strong> A well-maintained boiler operates more efficiently, using less gas to heat your home. Regular servicing can help reduce your energy costs.</p>
-                <p class="cs-text" style="margin-bottom: 10px;"><strong>Prevent Breakdowns:</strong> Servicing identifies worn parts and potential issues before they cause a complete breakdown, often at the worst possible time.</p>
-                <p class="cs-text" style="margin-bottom: 10px;"><strong>Extend Boiler Life:</strong> Just like a car, regular maintenance helps your boiler last longer. A well-serviced boiler can operate efficiently for 15 years or more.</p>
-                <p class="cs-text"><strong>Maintain Warranty:</strong> Most boiler manufacturers require annual servicing by a Gas Safe registered engineer to keep your warranty valid.</p>
-            </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Gas Pressure & Flow</h3>
+          <p class="cs-item-text">
+            We test gas pressure and flow rates to ensure the boiler is
+            receiving the correct amount of gas for safe operation.
+          </p>
         </div>
-    </section>
-    {% include 'components/cta.html' %} {% endblock %}
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Flue Analysis</h3>
+          <p class="cs-item-text">
+            We perform a flue gas analysis to check combustion efficiency and
+            ensure emissions are within safe limits.
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Safety Controls</h3>
+          <p class="cs-item-text">
+            We test all safety devices and controls to ensure they are
+            functioning correctly and will shut down the boiler if needed.
+          </p>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg"
+            alt="icon"
+            width="72"
+            height="72"
+          />
+        </picture>
+        <div class="cs-flex">
+          <h3 class="cs-h3">Service Report</h3>
+          <p class="cs-item-text">
+            You receive a detailed service report and any recommendations for
+            repairs or improvements to your system.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="sbs-r" style="padding: 100px 15px; background-color: #c42636">
+  <div class="cs-container" style="max-width: 1280px; margin: 0 auto">
+    <div class="cs-content mx-600">
+      <span class="cs-topper" style="color: #d4af37">Why It Matters</span>
+      <h2 class="cs-title">Benefits of Regular Boiler Servicing</h2>
+      <p class="cs-text" style="margin-bottom: 10px">
+        <strong>Safety First:</strong> A boiler service checks for gas leaks,
+        carbon monoxide risks and other potential hazards. Your family's safety
+        is the most important reason to service your boiler annually.
+      </p>
+      <p class="cs-text" style="margin-bottom: 10px">
+        <strong>Lower Energy Bills:</strong> A well-maintained boiler operates
+        more efficiently, using less gas to heat your home. Regular servicing
+        can help reduce your energy costs.
+      </p>
+      <p class="cs-text" style="margin-bottom: 10px">
+        <strong>Prevent Breakdowns:</strong> Servicing identifies worn parts and
+        potential issues before they cause a complete breakdown, often at the
+        worst possible time.
+      </p>
+      <p class="cs-text" style="margin-bottom: 10px">
+        <strong>Extend Boiler Life:</strong> Just like a car, regular
+        maintenance helps your boiler last longer. A well-serviced boiler can
+        operate efficiently for 15 years or more.
+      </p>
+      <p class="cs-text">
+        <strong>Maintain Warranty:</strong> Most boiler manufacturers require
+        annual servicing by a Gas Safe registered engineer to keep your warranty
+        valid.
+      </p>
+    </div>
+  </div>
+</section>
+{% include 'components/cta.html' %} {% endblock %}

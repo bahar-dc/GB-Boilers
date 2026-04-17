@@ -50,6 +50,9 @@
     color: var(--bodyTextColor);
     text-align: inherit;
   }
+  .no-underline {
+    text-decoration: none;
+  }
   .cs-button-solid {
     z-index: 1;
     position: relative;
@@ -331,8 +334,8 @@
   }
 }
 /*-- -------------------------- -->
-<---     Mobile Navigation      -->
-<--- -------------------------- -*/
+  <---     Mobile Navigation      -->
+  <--- -------------------------- -*/
 /* Mobile - 1023px */
 .desktop-hide-link {
   display: none;
@@ -602,8 +605,8 @@
   }
 }
 /*-- -------------------------- -->
-<---     Navigation Dropdown    -->
-<--- -------------------------- -*/
+  <---     Navigation Dropdown    -->
+  <--- -------------------------- -*/
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
   #cs-navigation .cs-li {
@@ -780,8 +783,8 @@
   }
 }
 /*-- -------------------------- -->
-<---     Desktop Navigation     -->
-<--- -------------------------- -*/
+  <---     Desktop Navigation     -->
+  <--- -------------------------- -*/
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #cs-navigation {
@@ -1092,7 +1095,7 @@
     padding: var(--sectionPadding);
     padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
     /* change this to match the color of the section above the footer */
-    background-color: #1D1C1C;
+    background-color: #1d1c1c;
     overflow: hidden;
     /* 30px - 50px */
     position: relative;
@@ -1396,10 +1399,13 @@
   #content-1450 {
     padding: var(--sectionPadding);
   }
-  #content-1450 p a, #content-1450 li a {
+  #content-1450 p a,
+  #content-1450 li a {
     color: var(--primary);
   }
-  #content-1450 p a:hover, #content-1450 p a:focus, #content-1450 li a:hover, #content-1450 li a:focus {
+  #content-1450 p a:hover, #content-1450 p a:focus,
+  #content-1450 li a:hover,
+  #content-1450 li a:focus {
     color: #faa342;
   }
   #content-1450 .cs-topper {
@@ -1439,10 +1445,12 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #content-1450 .cs-title, #content-1450 .cs-text {
+  #content-1450 .cs-title,
+  #content-1450 .cs-text {
     max-width: 100%;
   }
-  #content-1450 .cs-text, #content-1450 li {
+  #content-1450 .cs-text,
+  #content-1450 li {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     margin: 0 0 2rem 0;
@@ -1485,7 +1493,8 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #content-1450 .cs-title, body.dark-mode #content-1450 .cs-text {
+  body.dark-mode #content-1450 .cs-title,
+  body.dark-mode #content-1450 .cs-text {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #content-1450 .cs-text {
@@ -1596,11 +1605,11 @@ span.cs-button-solid.small-btn {
   width: 100%;
 }
 #accreditations-ctn .cs-topper {
-  color: #D4AF37;
+  color: #d4af37;
 }
 
 #reviews .cs-topper {
-  color: #D4AF37;
+  color: #d4af37;
 }
 
 #our-approach {
