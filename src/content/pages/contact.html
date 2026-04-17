@@ -1,94 +1,135 @@
 ---
-title: 'Contact Us | GB Boilers'
-description: 'GB Boilers'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'contact/'
+title: "Contact Us | GB Boilers"
+description: "GB Boilers"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "contact/"
 eleventyNavigation:
-    key: Contact Us
-    order: 600
-    hideOnDesktop: true
+  key: Contact Us
+  order: 600
+  hideOnDesktop: true
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/contact.css" />
+<link rel="canonical" href="https://www.gbboilers.co.uk/contact/" />
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/contact.css">
-{% endblock %}
+{% endblock %} {% block body %}
+<section id="int-hero">
+  <h1 id="home-h">Contact Us</h1>
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/boiler-service-hero-image.jpg"
+    />
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/boiler-service-hero-image.jpg"
+    />
+    <img
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/images/boiler-service-hero-image.jpg"
+      alt="kitchen cabinets"
+      loading="eager"
+      width="2500"
+      height="1667"
+    />
+  </picture>
+</section>
+<section id="cs-contact">
+  <div class="cs-container">
+    <form id="cs-form" name="contact" method="POST" netlify>
+      <div class="cs-content">
+        <span class="cs-topper">Contact</span>
+        <h2 class="cs-title">Get in Touch</h2>
+        <p class="cs-text">
+          Contact us today for a free, no-obligation quote. Whether you need a
+          boiler service, installation or repair, we're here to help.
+        </p>
+      </div>
+      <label>
+        Name
+        <input
+          required
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+        />
+      </label>
+      <label>
+        Phone
+        <input
+          required
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="Your Phone"
+        />
+      </label>
+      <label>
+        Email
+        <input
+          required
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+        />
+      </label>
+      <label>
+        Project Postcode
+        <input
+          type="text"
+          id="find"
+          name="find-us"
+          placeholder="Your Project Postcode"
+        />
+      </label>
+      <label>
+        What type of project is it?
+        <select>
+          <option>Residential</option>
+          <option>Commercial</option>
+        </select>
+      </label>
+      <label>
+        Please attach floor plans/images
+        <input type="file" id="file" name="file" />
+      </label>
 
-{% block body %}
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/boiler-service-hero-image.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/boiler-service-hero-image.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/boiler-service-hero-image.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="contact" method="POST" netlify>
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Contact us today for a free, no-obligation quote. Whether you need a boiler service, installation or repair, we're here to help.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Your Name">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Your Phone">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Your Email">
-                </label>                
-                <label>
-                    Project Postcode
-                    <input type="text" id="find" name="find-us" placeholder="Your Project Postcode">
-                </label>
-                <label>
-                    What type of project is it?
-                    <select>
-                        <option>Residential</option>
-                        <option>Commercial</option>
-                    </select>
-                </label>
-                <label>
-                    Please attach floor plans/images
-                    <input type="file" id="file" name="file"/>
-                </label>
-               
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:info@magicpainting.co.uk">info@gbboilers.co.uk</a>
-                <!--Phone-->
-                <span class="cs-header">Phone/WhatsApp</span>
-                <a class="cs-link" href="tel:08001937033">0800 193 7033</a>
-                <span class="cs-header">Service Area</span>
-                <p>
-                    Esher, Claygate, Thames Ditton and surrounding Surrey area
-                </p>
-                <span class="cs-header"></span>
-                <span class="cs-header">Hours </span>
-                <p>
-                    Monday - Friday: 8am - 6pm <br>
-                    Saturday: 9am - 1pm <br>
-                    Emergency calls accepted
-                </p>
-                <a href="#"></a>
-                <!--Address-->
-                <!-- <span class="cs-header">Address</span>
+      <label class="cs-label-message">
+        Message
+        <textarea
+          required
+          name="Message"
+          id="message"
+          placeholder="Write message..."
+        ></textarea>
+      </label>
+      <button class="cs-button-solid" type="submit">Submit Message</button>
+    </form>
+    <div class="cs-right-section">
+      <!--Email-->
+      <span class="cs-header">Email</span>
+      <a class="cs-link" href="mailto:info@magicpainting.co.uk"
+        >info@gbboilers.co.uk</a
+      >
+      <!--Phone-->
+      <span class="cs-header">Phone/WhatsApp</span>
+      <a class="cs-link" href="tel:08001937033">0800 193 7033</a>
+      <span class="cs-header">Service Area</span>
+      <p>Esher, Claygate, Thames Ditton and surrounding Surrey area</p>
+      <span class="cs-header"></span>
+      <span class="cs-header">Hours </span>
+      <p>
+        Monday - Friday: 8am - 6pm <br />
+        Saturday: 9am - 1pm <br />
+        Emergency calls accepted
+      </p>
+      <a href="#"></a>
+      <!--Address-->
+      <!-- <span class="cs-header">Address</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
                     {{client.address.lineOne}},
                     <br/>
@@ -101,28 +142,40 @@ eleventyNavigation:
                     </span>
                 </a> -->
 
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/image-10.webp">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/image-10.webp" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
-            </div>
-        </div>
-    </section>
-    <section style="padding: 100px 15px; background-color: #c42636;">
-        <div class="cs-container" style="max-width:1280px;margin:0 auto">
-            <div class="cs-content mx-600 center-align">
-                <span class="cs-topper" style="color: #D4AF37;">Service Areas</span>
-                <h2 class="cs-title">Areas We Cover</h2>
-                <p>
-                    GB Boilers provides plumbing and heating services throughout Surrey, including:
-                    Esher, Claygate, Thames Ditton, Thames Ditton, Cobham, Weybridge, Walton-on-Thames, Hersham, Oxshott, Hinchley Wood, Long Ditton, Surbiton, Tolworth, Hook, Epsom, and Kingston upon Thames.
-                </p>
-                <div class="button-group" style="margin-top: 20px;">
-                    <a href="/contact" class="cs-button-solid blue-btn">Contact Us Today</a>
-                </div>
-            </div>
-        </div>
-    </section>
+      <!-- Background Image-->
+      <picture class="cs-bg-picture">
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/image-10.webp"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/image-10.webp"
+          alt="building"
+          loading="lazy"
+          width="2500"
+          height="1667"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+<section style="padding: 100px 15px; background-color: #c42636">
+  <div class="cs-container" style="max-width: 1280px; margin: 0 auto">
+    <div class="cs-content mx-600 center-align">
+      <span class="cs-topper" style="color: #d4af37">Service Areas</span>
+      <h2 class="cs-title">Areas We Cover</h2>
+      <p>
+        GB Boilers provides plumbing and heating services throughout Surrey,
+        including: Esher, Claygate, Thames Ditton, Thames Ditton, Cobham,
+        Weybridge, Walton-on-Thames, Hersham, Oxshott, Hinchley Wood, Long
+        Ditton, Surbiton, Tolworth, Hook, Epsom, and Kingston upon Thames.
+      </p>
+      <div class="button-group" style="margin-top: 20px">
+        <a href="/contact" class="cs-button-solid blue-btn">Contact Us Today</a>
+      </div>
+    </div>
+  </div>
+</section>
 {% include 'components/cta.html' %} {% endblock %}
