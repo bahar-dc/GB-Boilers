@@ -2,5 +2,5 @@ User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://magicpainting.co.uk/sitemap.xml
+Sitemap: https://gbboilers.com//sitemap.xml
  
