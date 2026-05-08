@@ -63,7 +63,8 @@
     margin-bottom: clamp(2rem, 6.3vw, 3rem);
   }
   #cs-contact #cs-form input,
-  #cs-contact #cs-form textarea, #cs-contact #cs-form select {
+  #cs-contact #cs-form textarea,
+  #cs-contact #cs-form select {
     border: 1px solid #b4b2c7;
     border-radius: 0.5rem;
     margin-top: 0.25rem;
@@ -76,7 +77,8 @@
     transition: border 0.3s;
   }
   #cs-contact #cs-form input:hover,
-  #cs-contact #cs-form textarea:hover, #cs-contact #cs-form select:hover {
+  #cs-contact #cs-form textarea:hover,
+  #cs-contact #cs-form select:hover {
     border: 1px solid var(--primary);
   }
   #cs-contact #cs-form textarea {
@@ -273,6 +275,11 @@ input#file {
 
 a.cs-button-solid.blue-btn {
   background-color: var(--dark) !important;
+}
+
+.map iframe {
+  height: 350px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=contact.css.map */

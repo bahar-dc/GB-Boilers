@@ -12,6 +12,155 @@ eleventyNavigation:
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/contact.css" />
 <link rel="canonical" href="https://gbboilers.com/contact/" />
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "@id": "https://gbboilers.com/#business",
+    "name": "GB Boilers",
+    "description": "Gas Safe registered plumber in Esher, Claygate and Thames Ditton. Specialising in boiler servicing, boiler installation, central heating and commercial gas services across Surrey. Nearly 20 years of experience.",
+    "url": "https://gbboilers.com/",
+    "telephone": "+448001937033",
+    "email": "gbboileruk@gmail.com",
+    "image": "https://gbboilers.com/assets/images/logo/image.svg",
+    "logo": "https://gbboilers.com/assets/images/logo/image.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Esher",
+      "addressLocality": "Esher",
+      "postalCode": "KT10",
+      "addressRegion": "Surrey",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "51.3686",
+      "longitude": "-0.3640"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Esher",
+        "sameAs": "https://en.wikipedia.org/wiki/Esher"
+      },
+      {
+        "@type": "City",
+        "name": "Claygate"
+      },
+      {
+        "@type": "City",
+        "name": "Thames Ditton"
+      },
+      {
+        "@type": "City",
+        "name": "Cobham"
+      },
+      {
+        "@type": "City",
+        "name": "Weybridge"
+      },
+      {
+        "@type": "City",
+        "name": "Walton-on-Thames"
+      },
+      {
+        "@type": "City",
+        "name": "Hersham"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Surrey"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+448001937033",
+      "contactType": "customer service",
+      "areaServed": "GB",
+      "availableLanguage": "English",
+      "hoursAvailable": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ]
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Plumbing & Heating Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Boiler Servicing",
+            "url": "https://gbboilers.com/boiler-servicing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Boiler Installation",
+            "url": "https://gbboilers.com/boiler-installation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Central Heating",
+            "url": "https://gbboilers.com/central-heating"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Gas Services",
+            "url": "https://gbboilers.com/commercial-gas-engineer"
+          }
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "30",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "sameAs": [
+      "https://share.google/t7Psp5Wda9fjhMXCZ",
+      "https://find-and-update.company-information.service.gov.uk/company/08418199"
+    ],
+    "priceRange": "££",
+    "currenciesAccepted": "GBP",
+    "paymentAccepted": "Cash, Bank Transfer, Card"
+  }
+</script>
 
 {% endblock %} {% block body %}
 <section id="int-hero">
@@ -178,4 +327,23 @@ eleventyNavigation:
     </div>
   </div>
 </section>
-{% include 'components/cta.html' %} {% endblock %}
+{% include 'components/cta.html' %}
+<section>
+  <div class="map-wrap">
+    <div class="cs-container">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps?q=7+Stevens+Lane,+Claygate,+Surrey,+KT10+0TD,+UK&output=embed"
+          width="400"
+          height="300"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

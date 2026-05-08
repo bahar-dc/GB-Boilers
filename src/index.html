@@ -35,54 +35,27 @@ eleventyNavigation:
   {
     "@context": "https://schema.org",
     "@type": "Plumber",
-    "@id": "https://gbboilers.com/#plumber",
+    "@id": "https://gbboilers.com/#business",
     "name": "GB Boilers",
+    "description": "Gas Safe registered plumber in Esher, Claygate and Thames Ditton. Specialising in boiler servicing, boiler installation, central heating and commercial gas services across Surrey. Nearly 20 years of experience.",
     "url": "https://gbboilers.com/",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://gbboilers.com/"
-    },
-    "logo": "https://gbboilers.com/assets/images/logo/image.svg",
-    "image": "https://gbboilers.com/assets/images/image-11.webp",
-    "description": "GB Boilers is a Gas Safe registered plumber serving Esher, Claygate, Thames Ditton and surrounding Surrey areas, specialising in boiler servicing, boiler installation and central heating solutions.",
     "telephone": "+448001937033",
     "email": "gbboileruk@gmail.com",
-    "priceRange": "££",
-    "founder": {
-      "@type": "Person",
-      "name": "Greg Bradley"
-    },
+    "image": "https://gbboilers.com/assets/images/logo/image.svg",
+    "logo": "https://gbboilers.com/assets/images/logo/image.svg",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "7 Stevens Lane",
-      "addressLocality": "Claygate",
+      "streetAddress": "Esher",
+      "addressLocality": "Esher",
+      "postalCode": "KT10",
       "addressRegion": "Surrey",
-      "postalCode": "KT10 0TD",
       "addressCountry": "GB"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 51.3637,
-      "longitude": -0.3455
+      "latitude": "51.3686",
+      "longitude": "-0.3640"
     },
-    "areaServed": [
-      {
-        "@type": "Place",
-        "name": "Esher"
-      },
-      {
-        "@type": "Place",
-        "name": "Claygate"
-      },
-      {
-        "@type": "Place",
-        "name": "Thames Ditton"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Surrey"
-      }
-    ],
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -97,53 +70,86 @@ eleventyNavigation:
         "closes": "13:00"
       }
     ],
-    "hasCredential": [
+    "areaServed": [
       {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Gas Safe Registered"
+        "@type": "City",
+        "name": "Esher",
+        "sameAs": "https://en.wikipedia.org/wiki/Esher"
       },
       {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "City & Guilds Qualified"
+        "@type": "City",
+        "name": "Claygate"
+      },
+      {
+        "@type": "City",
+        "name": "Thames Ditton"
+      },
+      {
+        "@type": "City",
+        "name": "Cobham"
+      },
+      {
+        "@type": "City",
+        "name": "Weybridge"
+      },
+      {
+        "@type": "City",
+        "name": "Walton-on-Thames"
+      },
+      {
+        "@type": "City",
+        "name": "Hersham"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Surrey"
       }
     ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Plumbing & Heating Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Boiler Servicing",
+            "url": "https://gbboilers.com/boiler-servicing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Boiler Installation",
+            "url": "https://gbboilers.com/boiler-installation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Central Heating",
+            "url": "https://gbboilers.com/central-heating"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Gas Services",
+            "url": "https://gbboilers.com/commercial-gas-engineer"
+          }
+        }
+      ]
+    },
     "sameAs": [
-      "https://www.google.com/maps/place/GB+Boiler+Services/@51.482609,-0.6269931,11z/data=!4m6!3m5!1s0x48760fa337c55771:0x16c6b9b4961c9a47!8m2!3d51.3495045!4d-0.4379379!16s%2Fg%2F1tgp08l1"
+      "https://share.google/t7Psp5Wda9fjhMXCZ",
+      "https://find-and-update.company-information.service.gov.uk/company/08418199"
     ],
-    "makesOffer": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Boiler Servicing",
-          "url": "https://gbboilers.com/boiler-servicing"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Boiler Installation",
-          "url": "https://gbboilers.com/boiler-installation"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Central Heating",
-          "url": "https://gbboilers.com/central-heating"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Commercial Gas Engineer",
-          "url": "https://gbboilers.com/commercial-gas-engineer"
-        }
-      }
-    ]
+    "priceRange": "££",
+    "currenciesAccepted": "GBP",
+    "paymentAccepted": "Cash, Bank Transfer, Card"
   }
 </script>
 
