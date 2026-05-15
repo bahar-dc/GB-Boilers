@@ -48,6 +48,185 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- Cookies Consent -->
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <link
+      rel="stylesheet"
+      id="silktide-consent-manager-css"
+      href="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.0/silktide-consent-manager.css"
+      integrity="sha384-IO1E/jCrQXyH5rwcI0SXP7OXw47JFqQNDQcKhbFvqnL2IunBxxwE2Ne5XyAmCqKs"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      :root {
+        /* Change these per website */
+        --cookie-primary: #375e9d;
+        --cookie-primary-hover: #2b4979;
+        --cookie-background: #ffffff;
+        --cookie-text: #4b494b;
+        --cookie-light: #f4f0df;
+        --cookie-border: #e5e5e5;
+        --cookie-white: #ffffff;
+
+        /* Silktide variables */
+        --stcm-color-primary: var(--cookie-primary);
+        --stcm-color-background: var(--cookie-background);
+        --stcm-color-text: var(--cookie-text);
+      }
+
+      /* Main buttons */
+      .stcm-button-primary,
+      .stcm-button--primary,
+      button[data-stcm-accept-all],
+      button[data-stcm-save] {
+        background-color: var(--cookie-primary) !important;
+        border-color: var(--cookie-primary) !important;
+        color: var(--cookie-white) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .stcm-button-primary:hover,
+      .stcm-button--primary:hover,
+      button[data-stcm-accept-all]:hover,
+      button[data-stcm-save]:hover {
+        background-color: var(--cookie-primary-hover) !important;
+        border-color: var(--cookie-primary-hover) !important;
+      }
+
+      /* Floating cookie icon */
+      #stcm-icon {
+        background-color: var(--cookie-primary) !important;
+        color: var(--cookie-white) !important;
+        transition: all 0.3s ease !important;
+      }
+
+      #stcm-icon:hover {
+        background-color: var(--cookie-primary-hover) !important;
+      }
+
+      #stcm-icon svg path {
+        fill: var(--cookie-white) !important;
+      }
+
+      /* Modal close / X button */
+      .stcm-modal-close {
+        /* background-color: var(--cookie-primary) !important; */
+        border: none !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .stcm-modal-close:hover {
+        background-color: var(--cookie-primary-hover) !important;
+      }
+
+      .stcm-modal-close svg path {
+        fill: var(--cookie-white) !important;
+      }
+
+      /* Free banner notice */
+      #stcm-wrapper a {
+        color: #050505 !important;
+      }
+      /* Optional: modal headings/text */
+      .stcm-modal h1,
+      .stcm-modal h2,
+      .stcm-modal p,
+      .stcm-modal label {
+        color: var(--cookie-text) !important;
+      }
+
+      #stcm-banner .stcm-preferences-button {
+        color: var(--cookie-text) !important;
+      }
+      #stcm-banner .stcm-preferences-button span:hover {
+        color: var(--cookie-text) !important;
+      }
+
+      .stcm-logo svg,
+      .stcm-logo svg path {
+        fill: var(--cookie-text) !important;
+      }
+    </style>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("consent", "default", {
+        analytics_storage: "denied",
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.0/silktide-consent-manager.js"
+      integrity="sha384-j4NIMOecmtzMWe9GJADIIe5hTlHG63aiTQ/2XorW10RNyQJg+IU+xwFVDy45wBah"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      window.silktideConsentManager.init({
+        backdrop: {
+          show: true,
+        },
+
+        icon: {
+          position: "bottomLeft",
+        },
+
+        prompt: {
+          position: "bottomRight",
+        },
+
+        consentTypes: [
+          {
+            id: "essential",
+            label: "Essential",
+            description:
+              "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+            required: true,
+          },
+          {
+            id: "analytics",
+            label: "Analytics",
+            description:
+              "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+            required: false,
+            defaultValue: false,
+            gtag: "analytics_storage",
+          },
+        ],
+
+        text: {
+          prompt: {
+            description:
+              "<p>We use cookies to improve your experience and understand how visitors use our website.</p>",
+            acceptAllButtonText: "Accept all",
+            acceptAllButtonAccessibleLabel: "Accept all cookies",
+            rejectNonEssentialButtonText: "Reject non-essential",
+            rejectNonEssentialButtonAccessibleLabel:
+              "Reject all non-essential cookies",
+            preferencesButtonText: "Preferences",
+            preferencesButtonAccessibleLabel: "Toggle preferences",
+          },
+
+          preferences: {
+            title: "Customize your cookie preferences",
+            description:
+              "<p>You can choose which types of cookies to allow. Essential cookies are always enabled because they are needed for the website to work properly.</p>",
+            saveButtonText: "Save and close",
+            saveButtonAccessibleLabel: "Save your cookie preferences",
+            creditLinkText: "Get this banner for free",
+            creditLinkAccessibleLabel: "Get this banner for free",
+          },
+        },
+      });
+    </script>
+
     <!-- Preloads -->
     <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
     <link
@@ -799,7 +978,7 @@
 </footer>
 
   </body>
-  <script type="application/ld+json">
+  <!-- <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Plumber",
@@ -829,5 +1008,5 @@
       },
       "sameAs": ["[Link to your Google Business Profile]"]
     }
-  </script>
+  </script> -->
 </html>
